@@ -1,0 +1,15 @@
+{
+  "name": "image-replication-ga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "test": "npm test"
+  },
+  "author": "Brent Gammon",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
