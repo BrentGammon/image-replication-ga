@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && http-server -c-1",
     "test": "npm test",
-    "build": "prettier --write . && babel public/scripts -d public/scripts/lib"
+    "build": "prettier --write . && babel public/scripts --out-dir public/build"
   },
   "author": "Brent Gammon",
   "license": "ISC",
