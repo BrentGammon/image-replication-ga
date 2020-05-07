@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && http-server -c-1",
-    "test": "npm test",
+    "test": "jest",
     "build": "prettier --write . && babel public/scripts --out-dir public/build"
   },
   "author": "Brent Gammon",
