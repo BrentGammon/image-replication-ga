@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1",
-    "test": "npm test"
+    "start": "npm run build && http-server -c-1",
+    "test": "npm test",
+    "build": "prettier --write . && babel public/scripts -d public/scripts/lib"
   },
   "author": "Brent Gammon",
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "prettier": "2.0.5"
   }
 }
